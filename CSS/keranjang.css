@@ -1,0 +1,315 @@
+/* ================= HERO KERANJANG ================= */
+
+.hero-keranjang{
+    position: relative;
+
+    width: 100%;
+    height: 250px;
+
+    background-image: url('../Image/bg-keranjang.png');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* Overlay agar teks lebih jelas */
+
+.hero-keranjang .overlay{
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* Isi */
+
+.hero-content{
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+.hero-content h1{
+    color: white;
+
+    font-size: 64px;
+    font-weight: 600;
+    margin-top: 70px;
+    margin-left: 500px;
+    font-family: poppins;
+}
+
+/* ================= CART SECTION ================= */
+
+.cart-section{
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 70px auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 60px;
+
+    font-family: poppins;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.cart-left{
+    flex: 1;
+}
+
+/* HEADER */
+
+.cart-header{
+    background: #d4877f;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 5fr 2fr 2fr;
+
+    font-weight: 500;
+    align-items: center;
+}
+
+/* ITEM */
+
+.cart-item{
+    display: grid;
+
+    grid-template-columns: 5fr 2fr 2fr;
+
+    align-items: center;
+
+    padding: 28px 15px;
+
+    border-bottom: 1px solid #d9a68d;
+}
+
+.product-column{
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.cart-item input{
+    width: 18px;
+    height: 18px;
+
+    accent-color: #c76f52;
+}
+
+.cart-item img{
+    width: 90px;
+    height: 90px;
+
+    object-fit: cover;
+}
+
+/* PRODUCT INFO */
+
+.product-info{
+    flex: 1;
+}
+
+.product-info h3{
+    color: #b75a3c;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-info p{
+    color: #9d7a6f;
+
+    font-size: 14px;
+
+    margin: 4px 0 12px;
+}
+
+.product-info span{
+    color: #e06b28;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* QUANTITY */
+
+.quantity-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    border: 1.5px solid #c76f52;
+    border-radius: 30px;
+
+    padding: 8px 18px;
+
+    width: fit-content;
+
+    margin: auto;
+    margin-left: -20px;
+
+    color: #b75a3c;
+}
+
+.quantity-box button{
+    border: none;
+    background: transparent;
+
+    font-size: 24px;
+    cursor: pointer;
+
+    color: #b75a3c;
+}
+
+.quantity-box span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* SUBTOTAL */
+
+.subtotal{
+    text-align: center;
+
+    color: #e06b28;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ================= PROMO ================= */
+
+.promo-section{
+    margin-top: 40px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+}
+
+.promo-section input{
+    width: 260px;
+
+    padding: 14px 18px;
+
+    border: 1.5px solid #c76f52;
+    border-radius: 8px;
+
+    outline: none;
+    font-style: italic;
+}
+
+.promo-section button{
+    padding: 14px 40px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #d4877f;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.promo-section a{
+    margin-left: auto;
+
+    color: #b07c63;
+
+    font-size: 14px;
+}
+
+/* ================= SUMMARY ================= */
+
+.summary-box{
+    width: 360px;
+
+    border: 1.5px solid #d9a68d;
+    border-radius: 12px;
+
+    padding: 30px;
+
+    font-family: poppins;
+}
+
+.summary-box h2{
+    color: #b75a3c;
+
+    font-size: 24px;
+    margin-bottom: 30px;
+
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #d9a68d;
+}
+
+.summary-item,
+.summary-total{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+    color: #c07a63;
+}
+
+.summary-total{
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #d9a68d;
+
+    font-weight: 600;
+}
+
+/* BUTTON */
+
+.checkout-btn{
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 16px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #d4877f;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
