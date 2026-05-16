@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 html,
-body{
+body {
     overflow-x: hidden;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,24 +22,18 @@ body {
 .navbar {
     background-color: #ffffff;
     border-radius: 50px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 0 25px;
-
     width: 90%;
     max-width: 1000px;
     height: 55px;
-
     position: fixed;
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
-
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-
     z-index: 1000;
 }
 
@@ -60,25 +56,18 @@ nav {
 
 .nav-links {
     list-style: none;
-
     display: flex;
     gap: 10px;
 }
 
 .nav-links a {
     text-decoration: none;
-
     color: #c47c7c;
-
     font-size: 14px;
     font-weight: 500;
-
     padding: 8px 18px;
-
     border-radius: 25px;
-
     transition: 0.3s ease;
-
     white-space: nowrap;
 }
 
@@ -92,9 +81,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px;
-
     color: #c47c7c;
-
     flex-shrink: 0;
 }
 
@@ -102,7 +89,6 @@ nav {
     color: #c47c7c;
     text-decoration: none;
     font-size: 16px;
-
     display: flex;
     align-items: center;
 }
@@ -114,1026 +100,353 @@ nav {
 
 .hamburger {
     display: none;
-
     font-size: 20px;
     color: #a85832;
-
     cursor: pointer;
 }
 
-/* ================= HERO SECTION ================= */
-
-.hero{
-    position: relative;
-
-    min-height: 100vh;
-
-    background-image: url('../Image/bg-homepage.png');
-    background-size: cover;
-    background-position: center;
-
-    padding: 160px 0 80px;
-
-    overflow: hidden;
-}
-
-/* CONTAINER */
-.hero-content{
-    width: 90%;
-    max-width: 1000px;
-
-    margin: 0 auto;
-
-    position: relative;
-    z-index: 2;
-}
-
-/* ================= ORNAMEN ================= */
-
-.ornamen{
-    position: absolute;
-    z-index: 1;
-}
-
-.ornamen.kanan{
-    top: 0;
-    right: 0;
-    width: 400px;
-}
-
-.ornamen.kiri{
-    bottom: 0;
-    left: 0;
-    width: 400px;
-}
-
-/* ================= HERO TEXT ================= */
-
-.hero-text{
-    margin-bottom: 60px;
-}
-
-.hero-text h1{
-    color: white;
-
-    font-size: 72px;
-    font-weight: 300;
-
-    line-height: 1.05;
-
-    max-width: 900px;
-}
-
-.hero-text span{
-    display: block;
-
-    font-style: italic;
-    font-weight: 700;
-}
-
-/* ================= CARD ================= */
-
-.info-card{
-    background: rgba(244, 232, 213, 0.85);
-
-    border-radius: 30px;
-
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-
-    padding: 50px;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-/* CARD ITEM */
-
-.card-item{
-    text-align: center;
-    flex: 1;
-}
-
-.icon-utama{
-    width: 110px;
-
-    display: block;
-
-    margin: 0 auto 20px;
-}
-
-.garis-pembatas{
-    width: 170px;
-
-    display: block;
-
-    margin: 0 auto 25px;
-}
-
-.card-item h3{
-    color: #B8642A;
-
-    font-size: 28px;
-    margin-bottom: 16px;
-}
-
-.card-item p{
-    color: #B8642A;
-
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-/* ================= KOLEKSI SECTION ================= */
-
-.koleksi{
-
-
-    padding: 120px 0;
-}
-
-.koleksi-container{
-    width: 90%;
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 70px;
-}
-
-/* GALLERY */
-
-.koleksi-gallery{
-    flex: 1;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 14px;
-}
-
-.koleksi-gallery img{
-    width: 100%;
-    object-fit: cover;
-
-    transition: 0.3s ease;
-}
-
-.koleksi-gallery img:hover{
-    transform: scale(1.03);
-}
-
-/* BESAR KECIL GAMBAR */
-
-.img1{
-
-    height: 350px;
-}
-
-.img2{
-    height: 230px;
-}
-
-.img3{
-    height: 230px;
-}
-
-.img4{
-    height: 350px;
-    margin-top: -117px;
-}
-
-/* CONTENT */
-
-.koleksi-content{
-    flex: 1;
-}
-
-.koleksi-content h2{
-    color: #cf7f78;
-
-    font-size: 56px;
-    font-weight: 700;
-
-    margin-bottom: 25px;
-}
-
-.deskripsi{
-    color: #b86570;
-
-    font-size: 20px;
-    line-height: 1.8;
-
-    margin-bottom: 35px;
-}
-
-/* LIST */
-
-.koleksi-list{
-    margin-bottom: 45px;
-}
-
-.list-item{
-    display: flex;
-    align-items: center;
-
-    gap: 16px;
-
-    margin-bottom: 18px;
-
-    color: #b86570;
-
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.list-item i{
-    color: #cf7f78;
-}
-
-/* BUTTON */
-
-.btn-katalog{
-    display: inline-block;
-
-    background: #cf7f78;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 18px 60px;
-
-    border-radius: 50px;
-
-    font-size: 24px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.btn-katalog:hover{
-    transform: translateY(-3px);
-}
-
-/* ================= EDUKASI SECTION ================= */
-
-.edukasi-section{
-    position: relative;
-
-    min-height: 100vh;
-
-    background-image: url('../Image/bg-edukasiprev.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    overflow: hidden;
-
-    padding: 100px 0;
-}
-
-/* OVERLAY GELAP */
-
-.edukasi-overlay{
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0,0,0,0.25);
-
-    z-index: 1;
-}
-
-/* CONTAINER */
-
-.edukasi-container{
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 50px;
-
-    position: relative;
-    z-index: 2;
-}
-
-/* CONTENT KIRI */
-
-.edukasi-content{
-    flex: 1;
-    padding-left: 30px;
-}
-
-.edukasi-content h2{
-    color: white;
-
-    font-size: 56px;
-    font-weight: 700;
-
-    margin-bottom: 25px;
-}
-
-.edukasi-content p{
-    color: white;
-
-    font-size: 20px;
-    line-height: 1.8;
-
-    margin-bottom: 40px;
-
-    max-width: 650px;
-}
-
-/* BUTTON */
-
-.btn-edukasi{
-    display: inline-block;
-
-    background: #d98aa0;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 18px 45px;
-
-    border-radius: 50px;
-
-    font-size: 24px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.btn-edukasi:hover{
-    transform: translateY(-3px);
-}
-
-/* VISUAL KANAN */
-
-.edukasi-visual{
-    flex: 1;
-
-    position: relative;
-
-    width: 100%;
-    min-height: 650px;
-
-    overflow: visible;
-}
-
-.chibi-img{
-    position: absolute;
-
-    width: 100%;
-    max-width: 420px;
-
-    right: 0;
-    bottom: -70px;
-}
-
-/* CHAT */
-
-.chat{
-    position: absolute;
-}
-
-.chat-1{
-    top: 70px;
-    left: 140px;
-
-    width: 60%;
-    max-width: 300px;
-}
-
-.chat-2{
-    top: 170px;
-    right: 10px;
-
-    width: 60%;
-    max-width: 300px;
-}
-
-
-/* ================= TENTANG SECTION ================= */
-
-.tentang-section{
-
-    padding: 100px 0 10px;
-}
-
-.tentang-container{
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 80px;
-}
-
-/* ================= GALLERY ================= */
-
-.tentang-gallery{
-    flex: 1;
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px;
-}
-
-/* GAMBAR */
-
-.tentang-img{
-    width: 100%;
-
-    object-fit: cover;
-
-    transition: 0.3s ease;
-}
-
-.tentang-img:hover{
-    transform: scale(1.02);
-}
-
-/* BESAR KECIL */
-
-.img-besar{
-    grid-column: span 2;
-
-    height: 380px;
-    width: 90%;
-
-    margin: 0 auto;
-}
-
-.img-kecil1{
-    height: 220px;
-    margin-left: 28px;
-    width: 90%;
-}
-
-.img-kecil2{
-    height: 220px;
-    width: 90%;
-}
-
-/* ================= CONTENT ================= */
-
-.tentang-content{
-    flex: 1;
-}
-
-.tentang-content h2{
-    color: #5d8600;
-
-    font-size: 56px;
-    font-weight: 700;
-
-    margin-bottom: 30px;
-}
-
-.tentang-content p{
-    color: #5d8600;
-
-    font-size: 20px;
-    line-height: 1.8;
-
-    margin-bottom: 40px;
-}
-
-/* ================= ICON ================= */
-
-.tentang-icon-group{
-    display: flex;
-    align-items: center;
-
-    gap: 35px;
-
-    margin-bottom: 45px;
-}
-
-.tentang-icon-group img{
-    width: 300px;
-}
-
-/* ================= BUTTON ================= */
-
-.btn-tentang{
-    display: inline-block;
-
-    background: #5d8600;
-    color: white;
-
-    text-decoration: none;
-
-    padding: 18px 42px;
-
-    border-radius: 50px;
-
-    font-size: 24px;
-    font-weight: 600;
-
-    transition: 0.3s ease;
-
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-.btn-tentang:hover{
-    transform: translateY(-3px);
-}
-
-
 /* ================= FOOTER ================= */
 
-.footer{
+.footer {
     position: relative;
-
     background-image: url('../Image/bg-footer.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-
     color: white;
 
     padding: 140px 0 60px;
 
     min-height: 200px;
-
     overflow: hidden;
 }
 
-
-
-/* CONTAINER */
-
-.footer-container{
-    width: 90%;
-    max-width: 1200px;
-
-    margin: 80px auto 0;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-
-    gap: 80px;
-
-    flex-wrap: wrap;
-
-    position: relative;
-    z-index: 2;
-}
-
-/* ================= LEFT ================= */
-
-.footer-left{
-    flex: 1.5;
-}
-
-/* TITLE */
-
-.footer-title{
-    margin-bottom: 50px;
-    margin-left: 40px;
-}
-
-.footer-title h2{
-    font-size: 36px;
-    font-weight: 700;
-
-    line-height: 1;
-
-    margin-bottom: 5px;
-}
-
-.footer-title span{
-    font-size: 30px;
-    font-weight: 300;
-
-    line-height: 1.5;
-}
-
-/* MENU GROUP */
-
-.footer-menu-group{
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 40px;
-}
-
-/* MENU */
-
-.footer-menu h3{
-    font-size: 18px;
-    font-weight: 600;
-
-    margin-bottom: 22px;
-    margin-left: 42px;
-}
-
-.footer-menu2 h3{
-    font-size: 18px;
-    font-weight: 600;
-
-    margin-bottom: 22px;
-    margin-left: -36px;
-}
-
-.footer-menu2 a{
-    
-    display: block;
-    max-width: 90%;
-    color: rgba(255,255,255,0.9);
-
-    text-decoration: none;
-
-    font-size: 16px;
-    line-height: 2;
-
-    transition: 0.3s ease;
-    margin-left: -36px;
-}
-
-.footer-menu3 h3{
-    font-size: 18px;
-    font-weight: 600;
-
-    margin-bottom: 22px;
-    margin-left: -20px;
-}
-
-.footer-menu3 p{
-    max-width: 80%;
-    display: block;
-
-    color: rgba(255,255,255,0.9);
-
-    text-decoration: none;
-
-    font-size: 16px;
-    line-height: 2;
-
-    transition: 0.3s ease;
-    margin-left: -20px;
-}
-
-
-.footer-menu a{
-    display: block;
-
-    color: rgba(255,255,255,0.9);
-
-    text-decoration: none;
-
-    font-size: 16px;
-    line-height: 2;
-
-    transition: 0.3s ease;
-    margin-left: 42px;
-}
-
-.footer-menu a:hover{
-    opacity: 0.7;
-}
-
-/* ================= RIGHT ================= */
-
-.footer-right{
-    flex: 1;
-}
-
-.footer-contact-title{
-    font-size: 16px;
-    font-weight: 600;
-
-    margin-bottom: 20px;
-    margin-left: -40px;
-    margin-top: 6px;
-}
-
-/* FORM */
-
-.footer-form{
-    margin-bottom: 40px;
-    margin-left: -40px;  
-}
-
-/* EMAIL */
-
-.input-email{
-    display: flex;
-
-    gap: 15px;
-
-    margin-bottom: 20px;
-}
-
-.input-email input{
-    width: 100%;
-    max-width: 310px;
-
-    background: rgba(255,255,255,0.08);
-
-    border: 1.5px solid rgba(255,255,255,0.5);
-
-    border-radius: 14px;
-
-    padding: 16px 20px;
-
-    color: white;
-
-    font-size: 16px;
-
-    outline: none;
-
-    backdrop-filter: blur(5px);
-}
-
-.input-email input::placeholder{
-    font-family: 'Poppins';
-    color: rgba(255,255,255,0.7);
-}
-
-/* BUTTON */
-
-.input-email button{
-    background: white;
-
-    color: #556316;
-
-    border: none;
-
-    border-radius: 14px;
-
-    padding: 0 38px;
-
-    font-size: 17px;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition: 0.3s ease;
-}
-
-.input-email button:hover{
-    transform: translateY(-2px);
-}
-
-/* TEXTAREA */
-
-.footer-form textarea{
-    width: 100%;
-    max-width: 448px;
-    height: 180px;
-
-    resize: none;
-
-    background: rgba(255,255,255,0.08);
-
-    border: 1.5px solid rgba(255,255,255,0.5);
-
-    border-radius: 16px;
-
-    padding: 20px;
-
-    color: white;
-
-    font-size: 16px;
-
-    outline: none;
-
-    backdrop-filter: blur(5px);
-}
-
-.footer-form textarea::placeholder{
-    font-family: 'Poppins';
-    color: rgba(255,255,255,0.7);
-}
-
-/* ================= SOCIAL ================= */
-
-.footer-social h3{
-    font-size: 18px;
-
-    margin-bottom: 18px;
-    margin-left: -36px;
-}
-
-.social-links{
-    margin-left: -36px;
-
-    display: flex;
-    align-items: center;
-
-    gap: 30px;
-    flex-wrap: wrap;
-}
-
-.phone-link{
-    margin-left: 20px;
-}
-
-.social-links .phone-link i{
-    font-size: 18px;
-}
-
-.phone-link span{
-    font-size: 16px;
-}
-
-.social-links a{
-    color: white;
-
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-
-    gap: 12px;
-
-    font-size: 18px;
-
-    transition: 0.3s ease;
-}
-
-.social-links a:hover{
-    opacity: 0.7;
-}
-
-.social-links i{
-    font-size: 28px;
-}
-
-/* ================= LINE ================= */
-
-.footer-line{
-    width: 90%;
-    max-width: 1200px;
-
-    height: 1px;
-
-    background: rgba(255,255,255,0.35);
-
-    margin: 60px auto 30px;
-
-    position: relative;
-    z-index: 2;
-}
-
-/* ================= BOTTOM ================= */
-
-.footer-bottom{
+.footer-container {
     width: 90%;
     max-width: 1200px;
 
     margin: 0 auto;
 
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-    gap: 20px;
-
+    align-items: flex-start;
+    gap: 80px;
     flex-wrap: wrap;
 
     position: relative;
     z-index: 2;
 }
 
-.footer-bottom p{
-    font-size: 16px;
-
-    color: rgba(255,255,255,0.85);
-}
-
-.footer-bottom-links{
+.pre-footer-image{
     display: flex;
-
-    gap: 30px;
-
-    flex-wrap: wrap;
+    line-height: 0;
 }
 
-.footer-bottom-links a{
-    color: rgba(255,255,255,0.85);
+.bottom-banner-img{
+    display: block;
+    width: 100%;
+}
 
+.footer-left {
+    flex: 1.5;
+}
+
+.footer-title {
+    margin-bottom: 50px;
+    margin-left: 40px;
+}
+
+.footer-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+.footer-title span {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.footer-menu-group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-menu h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    margin-left: 42px;
+}
+
+.footer-menu2 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    margin-left: -36px;
+}
+
+.footer-menu2 a {
+    display: block;
+    max-width: 90%;
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-
     font-size: 16px;
-
+    line-height: 2;
     transition: 0.3s ease;
+    margin-left: -36px;
 }
 
-.footer-bottom-links a:hover{
+.footer-menu3 h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    margin-left: -20px;
+}
+
+.footer-menu3 p {
+    max-width: 80%;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2;
+    transition: 0.3s ease;
+    margin-left: -20px;
+}
+
+.footer-menu a {
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 2;
+    transition: 0.3s ease;
+    margin-left: 42px;
+}
+
+.footer-menu a:hover {
     opacity: 0.7;
 }
 
-/* ================= RESPONSIVE ================= */
+.footer-right {
+    flex: 1;
+}
 
-@media screen and (max-width: 992px){
+.footer-contact-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: -40px;
+    margin-top: 6px;
+}
 
-    .footer-container{
+.footer-form {
+    margin-bottom: 40px;
+    margin-left: -40px;
+}
+
+.input-email {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.input-email input {
+    width: 100%;
+    max-width: 310px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 14px;
+    padding: 16px 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(5px);
+}
+
+.input-email input::placeholder {
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.input-email button {
+    background: white;
+    color: #556316;
+    border: none;
+    border-radius: 14px;
+    padding: 0 38px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.input-email button:hover {
+    transform: translateY(-2px);
+}
+
+.footer-form textarea {
+    width: 100%;
+    max-width: 448px;
+    height: 180px;
+    resize: none;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    backdrop-filter: blur(5px);
+}
+
+.footer-form textarea::placeholder {
+    font-family: 'Poppins';
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 18px;
+    margin-left: -36px;
+}
+
+.social-links {
+    margin-left: -36px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.phone-link {
+    margin-left: 20px;
+}
+
+.social-links .phone-link i {
+    font-size: 18px;
+}
+
+.phone-link span {
+    font-size: 16px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+}
+
+.social-links i {
+    font-size: 28px;
+}
+
+.footer-line {
+    width: 90%;
+    max-width: 1200px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.35);
+    margin: 60px auto 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-bottom p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    opacity: 0.7;
+}
+
+/* ================= RESPONSIVE NAVBAR & FOOTER ================= */
+
+@media screen and (max-width: 992px) {
+    .footer-container {
         flex-direction: column;
-
         gap: 60px;
     }
 
-    .footer-title h2{
+    .footer-title h2 {
         font-size: 34px;
     }
 
-    .footer-title span{
+    .footer-title span {
         font-size: 24px;
     }
-
 }
 
-@media screen and (max-width: 768px){
-
-    .footer{
+@media screen and (max-width: 768px) {
+    .footer {
         padding: 70px 0 35px;
     }
 
-    .footer-menu-group{
+    .footer-menu-group {
         flex-direction: column;
-
         gap: 40px;
     }
 
-    .input-email{
+    .input-email {
         flex-direction: column;
     }
 
-    .input-email button{
+    .input-email button {
         height: 55px;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .footer-bottom-links{
+    .footer-bottom-links {
         gap: 20px;
     }
 
-    .social-links{
+    .social-links {
         gap: 18px;
     }
 
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media screen and (max-width: 768px){
-
-    .koleksi-container{
-        flex-direction: column;
-    }
-
-    .koleksi-content h2{
-        font-size: 42px;
-    }
-
-    .deskripsi{
-        font-size: 17px;
-    }
-
-    .list-item{
-        font-size: 17px;
-    }
-
-    .btn-katalog{
-        font-size: 18px;
-        padding: 16px 40px;
-    }
-
-}
-
-/* ================= RESPONSIVE ================= */
-
-@media screen and (max-width: 768px) {
-
+    /* NAVBAR RESPONSIVE */
     .navbar {
         width: 90%;
         padding: 0 20px;
@@ -1141,7 +454,6 @@ nav {
 
     nav {
         margin: 0;
-
         position: absolute;
         top: 65px;
         right: 0;
@@ -1150,15 +462,10 @@ nav {
     .nav-links {
         display: none;
         flex-direction: column;
-
         background-color: #ffffff;
-
         width: 180px;
-
         border-radius: 20px;
-
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-
         padding: 15px 0;
     }
 
@@ -1173,9 +480,7 @@ nav {
 
     .nav-links a {
         text-align: center;
-
         padding: 10px;
-
         display: block;
     }
 
@@ -1190,42 +495,5 @@ nav {
 
     .nav-actions {
         gap: 12px;
-    }
-
-    /* HERO */
-
-    .hero{
-        padding: 130px 0 60px;
-    }
-
-    .hero-text h1{
-        font-size: 44px;
-    }
-
-    /* CARD */
-
-    .info-card{
-        flex-direction: column;
-
-        padding: 35px;
-        gap: 35px;
-    }
-
-    .card-item h3{
-        font-size: 24px;
-    }
-
-    .card-item p{
-        font-size: 16px;
-    }
-
-    /* ORNAMEN */
-
-    .ornamen.kanan{
-        width: 220px;
-    }
-
-    .ornamen.kiri{
-        width: 220px;
     }
 }

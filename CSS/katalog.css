@@ -1,0 +1,670 @@
+
+/* ================= HERO KATALOG ================= */
+
+.katalog-hero {
+    position: relative;
+    width: 100%;
+    min-height: 450px;
+    background-image: url('../Image/bg-katalog1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Membawa area teks ke kanan */
+    padding: 0 15%; /* Memberi jarak aman dari tepi kanan layar */
+    overflow: hidden;
+}
+
+/* Motif Batik Kiri Atas */
+.katalog-motif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Menyesuaikan tinggi banner */
+    width: auto;
+    max-width: 60%;
+    object-fit: contain;
+    object-position: left top;
+    z-index: 1;
+}
+
+/* Teks Banner */
+.katalog-hero-text {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+    text-align: left; /* Teks rata kiri secara individu */
+    margin-top: 60px; /* Memberi ruang agar tidak tertutup navbar yang melayang */
+    margin-right: -50px;
+}
+
+.katalog-hero-text h2 {
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-top: 76px;
+    margin-bottom: 10px;
+}
+
+.katalog-hero-text h1 {
+    font-size: 76px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.1;
+    margin: 0;
+}
+
+/* ================= KATALOG MAIN CONTAINER ================= */
+
+.katalog-container {
+    padding: 50px 10%;
+    background-color: #ffffff; /* Background default putih */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Top Bar (Judul & Search) --- */
+.katalog-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.katalog-title {
+    color: #a85a32; /* Warna coklat Aralista */
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box input {
+    padding: 12px 18px;
+    border: 1px solid #d3bba9;
+    border-radius: 6px;
+    width: 350px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #8c6e5f;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #c4a99b;
+}
+
+.search-box button {
+    background-color: #a85a32;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #8b4825;
+}
+
+/* --- Layout Body (Sidebar & Grid) --- */
+.katalog-body {
+    display: flex;
+    gap: 50px;
+}
+
+/* --- Sidebar Filter --- */
+.sidebar-filter {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+.filter-group {
+    margin-bottom: 30px;
+}
+
+.filter-group h3 {
+    color: #a85a32;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.filter-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #8c6e5f;
+    margin-bottom: 12px;
+
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+
+    line-height: 1.4;
+}
+
+.filter-group input[type="checkbox"] {
+    accent-color: #a85a32;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* --- Grid Produk & Custom Scrollbar --- */
+.product-grid-container {
+    flex-grow: 1;
+    max-height: 850px; /* Batas tinggi untuk memunculkan scroll */
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+/* Scrollbar styling */
+.product-grid-container::-webkit-scrollbar {
+    width: 12px;
+}
+
+.product-grid-container::-webkit-scrollbar-track {
+    background: #f4ede8;
+    border-radius: 10px;
+}
+
+.product-grid-container::-webkit-scrollbar-thumb {
+    background: #a85a32;
+    border-radius: 10px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+/* --- Product Card --- */
+.product-card {
+    border: 1px solid #e5dacd;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(168, 90, 50, 0.1);
+}
+
+.card-img-container {
+    position: relative;
+    width: 100%;
+    height: 280px; 
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tag Diskon */
+.discount-badge {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: #ffffff;
+    color: #a85a32;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 700;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+
+.card-details {
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.align-bottom {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #a85a32;
+    margin: 0;
+
+    flex: 1;
+    line-height: 1.4;
+}
+
+.product-rating {
+    font-size: 13px;
+    color: #a85a32;
+    font-weight: 600;
+
+    flex-shrink: 0;
+    text-align: right;
+}
+
+.product-rating i {
+    color: #ffc107; /* Warna kuning bintang */
+    margin-right: 4px;
+}
+
+.card-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #a85a32;
+    margin: 0;
+}
+
+.product-desc {
+    font-size: 12px;
+    color: #8c6e5f;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.cart-icon-btn {
+    background: none;
+    border: none;
+    color: #a85a32;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s;
+    margin-top: 10px;
+}
+
+.cart-icon-btn:hover {
+    transform: scale(1.15);
+}
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 992px) {
+    .katalog-body {
+        flex-direction: column;
+    }
+    .sidebar-filter {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .product-grid-container {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .katalog-top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .search-box input {
+        width: 100%;
+    }
+    .search-box {
+        width: 100%;
+    }
+}
+
+/* ================= RESPONSIVE HERO ================= */
+
+@media screen and (max-width: 992px) {
+    .katalog-hero-text h2 { font-size: 42px; }
+    .katalog-hero-text h1 { font-size: 58px; }
+    .katalog-hero { padding: 0 10%; }
+}
+
+@media screen and (max-width: 768px) {
+    .katalog-hero {
+        min-height: 300px;
+        justify-content: center; /* Teks ke tengah di HP */
+        padding: 0 5%;
+    }
+    
+    .katalog-motif {
+        opacity: 0.3; /* Sedikit diredupkan agar teks tetap terbaca di HP */
+    }
+
+    .katalog-hero-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .katalog-hero-text h2 { font-size: 32px; }
+    .katalog-hero-text h1 { font-size: 46px; }
+}
+
+/* ================= COUNTER STATISTIK ================= */
+
+.katalog-counter {
+    position: relative;
+    width: 100%;
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../Image/bg-count.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Mengikuti scroll, atau gunakan 'fixed' jika ingin efek parallax */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+.counter-item {
+    text-align: center;
+    color: #ffffff;
+    flex: 1;
+}
+
+.counter-number {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+}
+
+/* Menambahkan tanda '+' setelah angka selesai berhitung */
+.counter-number::after {
+    content: "+";
+}
+
+.counter-label {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+/* ================= RESPONSIVE COUNTER ================= */
+@media screen and (max-width: 768px) {
+    .katalog-counter {
+        padding: 40px 0;
+    }
+    
+    .counter-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .counter-number {
+        font-size: 48px;
+    }
+
+    .counter-label {
+        font-size: 16px;
+    }
+}
+
+/* ================= JOIN MEMBER SECTION ================= */
+
+.join-member-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.join-member-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Left Side (Images & Icons) --- */
+.join-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menengahkan konten di area kiri */
+}
+
+.main-image-container {
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.promo-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.promo-icons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.promo-icon-box {
+    text-align: center;
+    color: #7b589a; /* Warna ungu utama */
+}
+
+.promo-icon-box img {
+    height: 150px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.promo-icon-box p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* --- Right Side (Text & Form) --- */
+.join-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join-title {
+    font-size: 52px;
+    font-weight: 700;
+    color: #7b589a; /* Warna ungu utama */
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+.join-desc {
+    font-size: 18px;
+    color: #a084b6; /* Warna ungu pudar untuk deskripsi */
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* --- Form --- */
+.join-form {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.email-input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 1px solid #cbbbd7;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #7b589a;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.email-input::placeholder {
+    color: #cbbbd7;
+    font-style: italic;
+}
+
+.email-input:focus {
+    border-color: #7b589a;
+}
+
+.btn-bergabung {
+    background-color: #7b589a;
+    color: #ffffff;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(123, 88, 154, 0.2);
+}
+
+.btn-bergabung:hover {
+    background-color: #654680;
+    transform: translateY(-2px);
+}
+
+/* --- Privacy Notice Box --- */
+.privacy-notice-box {
+    display: flex;
+    gap: 15px;
+    background-color: #fdfaf0; /* Warna krem kekuningan */
+    border: 1px solid #e8d7a7; /* Border krem */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.privacy-icon {
+    color: #d98a2c; /* Warna oranye icon */
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.privacy-text h4 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 600;
+}
+
+.privacy-text p {
+    margin: 0;
+    font-size: 12px;
+    color: #6b6b6b;
+    line-height: 1.6;
+}
+
+/* ================= RESPONSIVE JOIN MEMBER ================= */
+
+@media screen and (max-width: 992px) {
+    .join-member-container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .join-title {
+        font-size: 42px;
+    }
+
+    .privacy-notice-box {
+        text-align: left; /* Teks privasi tetap rata kiri agar mudah dibaca */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .join-member-section {
+        padding: 50px 5%;
+    }
+
+    .promo-icons-wrapper {
+        gap: 20px;
+    }
+
+    .join-title {
+        font-size: 36px;
+    }
+
+    .join-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-bergabung {
+        width: 100%;
+    }
+}
+/* ================= GAMBAR SEBELUM FOOTER ================= */
+
+.pre-footer-image {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* Tambahkan margin-top jika kamu ingin ada jarak antara bagian Join Member dan gambar ini */
+    /* margin-top: 60px; */ 
+    
+    /* Menggunakan flex untuk memastikan tidak ada spasi tersembunyi */
+    display: flex; 
+}
+
+.bottom-banner-img {
+    width: 100%;
+    height: auto;
+    /* object-fit: cover berguna jika gambar ingin selalu proporsional mengisi lebar layar */
+    object-fit: cover; 
+    
+    /* display: block SANGAT PENTING untuk menghilangkan celah putih (whitespace) di bawah gambar agar benar-benar menempel dengan footer */
+    display: block; 
+}
+
+/* ================= RESPONSIVE GAMBAR BAWAH ================= */
+@media screen and (max-width: 768px) {
+    .bottom-banner-img {
+        /* Jika di HP gambar terasa terlalu tinggi, kamu bisa membatasi tingginya di sini */
+        /* max-height: 250px; */
+    }
+}
