@@ -1,0 +1,451 @@
+/* ================= HERO SECTION ================= */
+
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../Image/bg-homepage.png');
+    background-size: cover;
+    background-position: center;
+    padding: 160px 0 80px;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.ornamen {
+    position: absolute;
+    z-index: 1;
+}
+
+.ornamen.kanan {
+    top: 0;
+    right: 0;
+    width: 400px;
+}
+
+.ornamen.kiri {
+    bottom: 0;
+    left: 0;
+    width: 400px;
+}
+
+.hero-text {
+    margin-bottom: 60px;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 300;
+    line-height: 1.05;
+    max-width: 900px;
+}
+
+.hero-text span {
+    display: block;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.info-card {
+    background: rgba(244, 232, 213, 0.85);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-item {
+    text-align: center;
+    flex: 1;
+}
+
+.icon-utama {
+    width: 110px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.garis-pembatas {
+    width: 170px;
+    display: block;
+    margin: 0 auto 25px;
+}
+
+.card-item h3 {
+    color: #B8642A;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.card-item p {
+    color: #B8642A;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* ================= KOLEKSI SECTION ================= */
+
+.koleksi {
+    padding: 120px 0;
+}
+
+.koleksi-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.koleksi-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.koleksi-gallery img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.koleksi-gallery img:hover {
+    transform: scale(1.03);
+}
+
+.img1 {
+    height: 350px;
+}
+
+.img2 {
+    height: 230px;
+}
+
+.img3 {
+    height: 230px;
+}
+
+.img4 {
+    height: 350px;
+    margin-top: -117px;
+}
+
+.koleksi-content {
+    flex: 1;
+}
+
+.koleksi-content h2 {
+    color: #cf7f78;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.deskripsi {
+    color: #b86570;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.koleksi-list {
+    margin-bottom: 45px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+    color: #b86570;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.list-item i {
+    color: #cf7f78;
+}
+
+.btn-katalog {
+    display: inline-block;
+    background: #cf7f78;
+    color: white;
+    text-decoration: none;
+    padding: 18px 60px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-katalog:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= EDUKASI SECTION ================= */
+
+.edukasi-section {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('../Image/bg-edukasiprev.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.edukasi-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+.edukasi-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.edukasi-content {
+    flex: 1;
+    padding-left: 30px;
+}
+
+.edukasi-content h2 {
+    color: white;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.edukasi-content p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+
+.btn-edukasi {
+    display: inline-block;
+    background: #d98aa0;
+    color: white;
+    text-decoration: none;
+    padding: 18px 45px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-edukasi:hover {
+    transform: translateY(-3px);
+}
+
+.edukasi-visual {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    overflow: visible;
+}
+
+.chibi-img {
+    position: absolute;
+    width: 100%;
+    max-width: 420px;
+    right: 0;
+    bottom: -70px;
+}
+
+.chat {
+    position: absolute;
+}
+
+.chat-1 {
+    top: 70px;
+    left: 140px;
+    width: 60%;
+    max-width: 300px;
+}
+
+.chat-2 {
+    top: 170px;
+    right: 10px;
+    width: 60%;
+    max-width: 300px;
+}
+
+/* ================= TENTANG SECTION ================= */
+
+.tentang-section {
+    padding: 80px 0 80px;
+}
+
+.tentang-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.tentang-gallery {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.tentang-img {
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+
+.tentang-img:hover {
+    transform: scale(1.02);
+}
+
+.img-besar {
+    grid-column: span 2;
+    height: 380px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.img-kecil1 {
+    height: 220px;
+    margin-left: 28px;
+    width: 90%;
+}
+
+.img-kecil2 {
+    height: 220px;
+    width: 90%;
+}
+
+.tentang-content {
+    flex: 1;
+}
+
+.tentang-content h2 {
+    color: #5d8600;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.tentang-content p {
+    color: #5d8600;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.tentang-icon-group {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 45px;
+}
+
+.tentang-icon-group img {
+    width: 300px;
+}
+
+.btn-tentang {
+    display: inline-block;
+    background: #5d8600;
+    color: white;
+    text-decoration: none;
+    padding: 18px 42px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn-tentang:hover {
+    transform: translateY(-3px);
+}
+
+/* ================= RESPONSIVE HOMEPAGE ================= */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        padding: 130px 0 60px;
+    }
+
+    .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .info-card {
+        flex-direction: column;
+        padding: 35px;
+        gap: 35px;
+    }
+
+    .card-item h3 {
+        font-size: 24px;
+    }
+
+    .card-item p {
+        font-size: 16px;
+    }
+
+    .ornamen.kanan {
+        width: 220px;
+    }
+
+    .ornamen.kiri {
+        width: 220px;
+    }
+
+    .koleksi-container {
+        flex-direction: column;
+    }
+
+    .koleksi-content h2 {
+        font-size: 42px;
+    }
+
+    .deskripsi {
+        font-size: 17px;
+    }
+
+    .list-item {
+        font-size: 17px;
+    }
+
+    .btn-katalog {
+        font-size: 18px;
+        padding: 16px 40px;
+    }
+}
