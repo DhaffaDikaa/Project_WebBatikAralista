@@ -1,0 +1,387 @@
+/* ==========================================================================
+   EDUKASI.CSS (KODE BARU: FLEXBOX MODULAR - ANTI CRASH & ANTI TABRAK)
+   ========================================================================== */
+
+.wawasan-flex-layout, .artikel-title-header, .artikel-flex-grid {
+    width: 95% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+}
+
+.edukasi-page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.edukasi-main-content {
+    flex: 1; 
+    width: 100%;
+    position: relative; 
+}
+
+/* ================= SECTION 1 & 2: HERO & AREA SLIDER ================= */
+.wawasan-hero-container {
+    padding: 140px 0 80px 0;
+    width: 100%;
+    background: #ffffff; 
+}
+
+.wawasan-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; 
+    text-align: right;     
+    
+    background-image: url('/Image/BGBatikE1.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important; 
+    background-size: cover !important;        
+    background-color: transparent !important;       
+    
+    padding: 60px 8% 40px 20px; 
+    margin-top: -140px;   
+    padding-top: 150px;   
+    margin-bottom: 50px;  
+    width: 100vw;
+    height: 580px;        
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.wawasan-header h1 {
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffffff !important; 
+    margin-bottom: 8px;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.wawasan-flex-layout {
+    display: flex;
+    gap: 100px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.wawasan-sidebar-menu {
+    flex: 0 0 340px; 
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-self: stretch; 
+}
+
+.menu-item-card {
+    background-color: #bfa3be; 
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    flex: 1;                
+    display: flex;    
+    flex-direction: column; 
+    justify-content: center;
+    width: 340px;
+}
+
+.menu-item-card.active {
+    background-color: #996a99; 
+}
+
+.thumb-wrapper {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+.thumb-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-item-card span {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.wawasan-slider-viewport {
+    flex: 0 1 auto; 
+    width: fit-content; 
+    max-width: 75%; 
+    position: relative;
+    height: auto; 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; 
+    padding: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-img-main {
+    max-width: 100%; 
+    max-height: 850px; 
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    display: block;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #ffffff;
+    font-size: 55px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.left { left: 20px; }
+.right { right: 20px; }
+
+.komik-section-header {
+    width: 95% !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-sizing: border-box;
+    padding-left: 127px; 
+}
+
+.komik-section-header h2 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #834444;
+    margin: 0;
+}
+
+.slide-counter-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    z-index: 10;
+}
+
+/* ================= SECTION 3: AREA ARTIKEL ================= */
+.artikel-section-wrapper {
+    background-image: url('/Image/BGE2.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important; 
+    min-height: 100vh;
+    padding: 120px 0 80px 0;    
+    width: 100vw;              
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.artikel-title-header {
+    text-align: center;
+    color: #ffffff !important; 
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.artikel-title-header h2 {
+    font-size: 72px;
+    margin-bottom: 30px;
+}
+
+.artikel-flex-grid {
+    display: flex !important; 
+    flex-direction: row;
+    justify-content: center; 
+    align-items: stretch;
+    gap: 80px; 
+    width: auto !important; 
+    max-width: 1400px !important; 
+    margin: 0 auto !important;
+}
+
+.artikel-card-modular {
+    background-color: #f7ede2; 
+    padding: 35px 30px; 
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important; 
+    justify-content: flex-start !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 16px; 
+    flex: 1;
+    max-width: 420px; 
+    min-height: 580px; 
+    margin: 0 !important; 
+}
+
+.card-header-title {
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: left; 
+}
+
+.artikel-card-modular h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a3b32;
+    text-align: left; 
+    margin: 0 !important;
+    line-height: 1.3;
+}
+
+.card-visual-wrapper {
+    position: relative;
+    width: 100%; 
+    height: 220px; 
+    overflow: hidden;
+    margin-bottom: 25px;
+    border-radius: 8px; 
+}
+
+.visual-img-container {
+    position: relative;
+    z-index: 2; 
+    width: 100%;
+    height: 100%;
+}
+
+.visual-img-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover; 
+}
+
+.visual-ornament-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Image/pembatas.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.25; 
+    z-index: 1; 
+    pointer-events: none;
+}
+
+.card-body-desc {
+    width: 100%;
+    text-align: left; 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.artikel-card-modular p {
+    font-size: 20px;
+    color: #5c4d42;
+    line-height: 1.6;
+    text-align: left; 
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* ================= COMPONENT FOOTER DI DALAM CARD ARTIKEL ================= */
+.card-footer-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.artikel-date {
+    font-size: 15px;
+    color: #8c7a6b;
+    font-weight: 500;
+}
+
+.read-article-btn {
+    background-color: #834444; 
+    color: #ffffff;
+    border: none;
+    padding: 8px 18px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.read-article-btn:hover {
+    background-color: #6d3535; 
+}
+
+.read-article-btn:active {
+    transform: scale(0.97); 
+}
+
+/* ================= SECTION 4: PEMBATAS BAWAH MELEBAR ================= */
+.bottom-pembatas-section {
+    width: 100%;
+    height: 0px; 
+    position: relative;
+    margin-top: 0 !important; 
+    margin-bottom: 0 !important;
+    z-index: 1; 
+}
+
+.pembatas-ornament-bg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 450px;
+    height: 100%;
+    background-image: url('/Image/pembatas.png'); 
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    opacity: 0.15; 
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ================= MEDIA RESPONSIVE SMARTPHONE ================= */
+@media screen and (max-width: 992px) {
+    .wawasan-flex-layout {
+        flex-direction: column;
+    }
+    .artikel-flex-grid {
+        grid-template-columns: 1fr;
+    }
+    .pembatas-ornament-bg {
+        width: 100%;
+        opacity: 0.1;
+    }
+}

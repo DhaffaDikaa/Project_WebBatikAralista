@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+}
+
+.profil-page-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.top-batik-banner-container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    display: flex;
+}
+
+.top-batik-img {
+    width: 100%;
+    min-width: 100vw;
+    height: 380px; 
+    object-fit: cover;
+}
+
+.tentang-aralista-section {
+    padding: 100px 0; 
+    background-color: #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tentang-grid-container {
+    display: grid !important;
+    grid-template-columns: 46% 8% 46%;
+    align-items: center;
+    width: 95% !important; 
+    max-width: none !important; 
+    margin: 0 auto !important;
+    gap: 0px;
+}
+
+.tentang-left-title {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.tentang-left-title h2 {
+    font-size: 56px; 
+    font-weight: 700;
+    color: #834444;
+    line-height: 1.15;
+    text-align: center; 
+}
+
+.vertical-divider-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+.vertical-divider-img {
+    height: 520px; 
+    width: auto;
+    font-weight: 700;
+    object-fit: contain;
+}
+
+.tentang-right-card {
+    background-color: #fdf6e9;
+    border-radius: 18px;
+    padding: 55px 60px; 
+    box-shadow: 0 6px 25px rgba(131, 68, 68, 0.03);
+    width: 95%; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+}
+
+.tentang-right-card p {
+    font-size: 28px; 
+    color: #a06666;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.penghargaan-section {
+    background-image: url('/Image/BGPU2.jpeg') !important; 
+    background-size: cover;          
+    background-position: center;      
+    background-repeat: no-repeat;     
+    padding: 130px 0;
+    color: #ffffff;
+    max-width: 100vw !important;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw !important;
+    margin-right: -50vw !important;
+    box-sizing: border-box;
+    background-size: 100%;
+}
+
+.penghargaan-container {
+    display: grid !important;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 70px;
+    align-items: center;
+    width: 95% !important; 
+    max-width: none !important; 
+    margin: 0 auto !important;
+    box-sizing: border-box;
+}
+
+.penghargaan-text-side {
+    width: 100%;
+    padding-left: 80px; 
+    box-sizing: border-box;
+    max-width: 900px;
+}
+
+.penghargaan-text-side h2 {
+    font-size: 56px; 
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.penghargaan-text-side p {
+    font-size: 28px; 
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.btn-pelajari-lanjut {
+    background-color: #ffffff;
+    color: #cc8585;
+    border: none;
+    padding: 30px 60px;
+    font-weight: 700;
+    font-size: 28px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-pelajari-lanjut:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.penghargaan-img-side img {
+    width: 100%;
+    max-width: 620px; 
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: block;
+    margin: 0 auto;
+}
+
+.sertifikasi-icons-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.icons-container {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr); 
+    align-items: center;
+    justify-content: space-around; 
+    width: 95% !important; 
+    max-width: none !important;
+    margin: 0 auto !important;
+}
+
+.icon-item {
+    text-align: center;
+    flex-direction: column;
+}
+
+.icon-item img {
+    height: 90px; 
+    width: auto;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.icon-item p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #7b589a;
+}
+
+.proses-batik-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.proses-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.proses-header h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #566d1a;
+    margin-bottom: 12px;
+}
+
+.proses-header p {
+    font-size: 20px;
+    color: #7b8f4c;
+    margin-bottom: 80px;
+}
+
+.proses-cards-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px !important; 
+    align-items: stretch !important; 
+    width: 95% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.proses-card {
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    display: flex !important;
+    flex-direction: column !important; 
+    align-items: center !important;    
+    justify-content: flex-start !important; 
+    text-align: center !important;     
+    width: 100% !important;
+    height: auto !important; 
+    box-sizing: border-box !important;
+}
+
+.proses-img-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background-color: #f7ede2;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.02);
+}
+
+.proses-img-wrapper img, 
+.proses-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.proses-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #566d1a;
+    margin: 0 0 15px 0;
+}
+
+.proses-card p {
+    font-size: 18px;
+    color: #7b8f4c;
+    line-height: 1.6;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.green-grass-divider {
+    width: 100%;
+    line-height: 0;
+    display: flex;
+}
+
+.grass-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .tentang-grid-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        width: 90% !important;
+    }
+    .vertical-divider-container {
+        display: none;
+    }
+    .tentang-left-title h2 {
+        font-size: 42px;
+    }
+    .tentang-right-card {
+        width: 100%;
+        padding: 35px 40px;
+    }
+    .tentang-right-card p {
+        font-size: 20px;
+    }
+    .penghargaan-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        width: 90% !important;
+    }
+    .penghargaan-text-side {
+        padding-left: 0;
+    }
+    .penghargaan-text-side h2 {
+        font-size: 38px;
+    }
+    .penghargaan-text-side p {
+        font-size: 20px;
+    }
+    .btn-pelajari-lanjut {
+        padding: 18px 40px;
+        font-size: 20px;
+    }
+    .proses-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 40px !important;
+        width: 90% !important;
+    }
+    .proses-img-wrapper {
+        max-width: 280px;
+    }
+    .icons-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .proses-header h2 {
+        font-size: 32px;
+    }
+    .proses-header p {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .proses-card h3 {
+        font-size: 20px;
+    }
+    .proses-card p {
+        font-size: 15px;
+    }
+}

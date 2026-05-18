@@ -1,0 +1,329 @@
+.artikel-detail-wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #faf8f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.artikel-detail-main {
+    flex: 1;
+    width: 100%;
+    padding: 130px 0 80px 0;
+    box-sizing: border-box;
+}
+
+.artikel-container-box {
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 60px 65px;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(131, 68, 68, 0.03);
+}
+
+.back-navigation {
+    margin-bottom: 35px;
+}
+
+.back-link {
+    color: #834444;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.back-link:hover {
+    color: #566d1a;
+    transform: translateX(-5px);
+}
+
+.artikel-header-section {
+    margin-bottom: 40px;
+}
+
+.artikel-category-tag {
+    display: inline-block;
+    background-color: rgba(86, 109, 26, 0.1);
+    color: #566d1a;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.artikel-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #221a16;
+    line-height: 1.4;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.artikel-meta-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    color: #8c7a6b;
+    font-size: 14px;
+    border-bottom: 1px solid #f2ede7;
+    padding-bottom: 22px;
+}
+
+.artikel-meta-info div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.meta-divider {
+    color: #d9cfc5;
+}
+
+.artikel-featured-image-wrapper {
+    width: 100%;
+    margin-bottom: 45px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.artikel-main-img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+}
+
+.img-caption {
+    font-size: 14px;
+    color: #8c7a6b;
+    font-style: italic;
+    margin-top: 12px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.artikel-content-body {
+    font-size: 17px;
+    line-height: 1.95;
+    color: #443a32;
+}
+
+.artikel-content-body p {
+    margin-bottom: 28px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.artikel-content-body .lead-paragraph {
+    font-size: 19px;
+    line-height: 1.8;
+    color: #1a1310;
+    font-weight: 400;
+    text-indent: 0px;
+}
+
+.artikel-footer-tags {
+    margin-top: 55px;
+    padding-top: 30px;
+    border-top: 1px solid #f2ede7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tags-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag-label {
+    font-weight: 600;
+    color: #221a16;
+    font-size: 15px;
+}
+
+.tag-item {
+    background-color: #f2ede7;
+    color: #5c4e43;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.share-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.share-box span {
+    font-weight: 600;
+    color: #221a16;
+    font-size: 15px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.share-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    filter: brightness(0.9);
+}
+
+.share-btn.fb { background-color: #3b5998; }
+.share-btn.tw { background-color: #1da1f2; }
+.share-btn.wa { background-color: #25d366; }
+.share-btn.ln { background-color: #7e7e7e; }
+
+/* ==========================================================================
+   MEDIA QUERIES RESPONSIVITAS TOTAL
+   ========================================================================== */
+
+/* Tablet & Layar Menengah (Di bawah 1024px) */
+@media screen and (max-width: 1024px) {
+    .artikel-container-box {
+        padding: 45px 40px;
+        width: 92%;
+    }
+    
+    .artikel-main-title {
+        font-size: 28px;
+    }
+}
+
+/* Handphone Layar Standar (Di bawah 768px) */
+@media screen and (max-width: 768px) {
+    .artikel-detail-main {
+        padding-top: 95px; 
+        padding-bottom: 50px;
+    }
+    
+    .artikel-container-box {
+        width: 92%;
+        padding: 30px 20px;
+        border-radius: 16px;
+    }
+    
+    .artikel-main-title {
+        font-size: 22px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+    
+    .artikel-meta-info {
+        gap: 10px;
+        font-size: 13px;
+        padding-bottom: 18px;
+    }
+    
+    .artikel-featured-image-wrapper {
+        margin-bottom: 30px;
+    }
+    
+    .artikel-content-body {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    
+    .artikel-content-body p {
+        text-indent: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .artikel-content-body .lead-paragraph {
+        font-size: 17px;
+        text-indent: 0;
+    }
+    
+    .artikel-footer-tags {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 25px;
+        margin-top: 40px;
+        padding-top: 25px;
+    }
+
+    .share-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+/* Handphone Layar Kecil (Di bawah 480px) */
+@media screen and (max-width: 480px) {
+    .artikel-detail-main {
+        padding-top: 85px;
+    }
+
+    .artikel-container-box {
+        width: 94%;
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+
+    .artikel-main-title {
+        font-size: 19px;
+        line-height: 1.35;
+    }
+
+    .artikel-category-tag {
+        font-size: 11px;
+        padding: 4px 12px;
+        margin-bottom: 15px;
+    }
+
+    .artikel-meta-info {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .meta-divider {
+        display: none; 
+    }
+
+    .artikel-content-body p {
+        text-indent: 15px;
+        text-align: left; 
+    }
+
+    .share-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}

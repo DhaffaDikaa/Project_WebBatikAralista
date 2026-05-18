@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katalog - Aralista</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/katalog.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="Image/logo.png" alt="Logo Aralista">
+        </div>
+
+        <nav>
+            <ul class="nav-links" id="nav-menu">
+                <li>
+                    <a href="index.html">Beranda</a>
+                </li>
+                <li>
+                    <a href="katalog.html" class="active">Katalog</a>
+                </li>
+                <li>
+                    <a href="edukasi.html">Edukasi</a>
+                </li>
+                <li>
+                    <a href="profil.html">Profil Usaha</a>
+                </li>
+                <li>
+                    <a href="kontak.html">Kontak</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <a href="keranjang.html" aria-label="Keranjang">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+            <span class="divider">|</span>
+            <a href="profil-user.html" aria-label="Profil">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+
+        <div class="hamburger" id="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+
+    <section class="katalog-hero">
+
+        <div class="katalog-hero-text">
+            <h2>Temukan</h2>
+            <h1>Motif Pilihan</h1>
+        </div>
+
+    </section>
+
+
+    <section class="katalog-container">
+        
+        <div class="katalog-top-bar">
+            <h2 class="katalog-title">Katalog Aralista</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Mau cari motif yang mana?">
+                <button type="button">Cari</button>
+            </div>
+        </div>
+
+        <div class="katalog-body">
+            
+            <aside class="sidebar-filter">
+                <div class="filter-group">
+                    <h3>Jenis Batik</h3>
+                    <label><input type="checkbox"> Batik Ecoprint</label>
+                    <label><input type="checkbox"> Batik Tulis</label>
+                    <label><input type="checkbox"> Batik Cap</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Ukuran Batik</h3>
+                    <label><input type="checkbox"> 255 x 115 cm</label>
+                    <label><input type="checkbox"> 115 x 155 cm</label>
+                    <label><input type="checkbox"> 160 x 50 cm</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Jenis Produk</h3>
+                    <label><input type="checkbox"> Kain</label>
+                    <label><input type="checkbox"> Aksesoris</label>
+                </div>
+
+                <div class="filter-group">
+                    <h3>Harga Produk</h3>
+
+                    <label><input type="checkbox"> &lt; Rp100.000,00</label>
+                    <label><input type="checkbox"> &lt; Rp200.000,00</label>
+                    <label><input type="checkbox"> &lt; Rp500.000,00</label>
+                    <label><input type="checkbox"> &gt; Rp500.000,00</label>
+                </div>
+            </aside>
+
+            <div class="product-grid-container">
+                <div class="product-grid">
+                    
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <span class="discount-badge">Diskon 50%</span>
+                            <img src="Image/batikkat1.png" alt="Motif Belumtau"> 
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp500.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat2.png" alt="Motif Garudeya">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Garudeya</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp175.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Cap | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat3.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp150.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Ecoprint | 160 x 50 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat4.png" alt="Motif Sumber Maron">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Sumber Maron</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp400.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat5.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp150.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Ecoprint | 160 x 50 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat6.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp400.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat7.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Telaga Wakon</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp500.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat8.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Sumber Maron</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat9.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat10.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat11.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp500.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat12.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Sumber Maron</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp250.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Cap | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat13.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Tugu Malang</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp600.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat14.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp250.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat15.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp150.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Ecoprint | 160 x 50 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat16.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Malangan</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat17.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp500.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Cap | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat18.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat19.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp175.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Cap | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat20.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp500.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat21.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp2.000.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat22.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp350.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Batik Tulis | 225 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat23.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp150.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Ecoprint | 160 x 50 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat24.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Belumtau</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp85.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Ecoprint | 115 x 115 cm</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat25.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Udeng</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp65.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Aksesoris</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat27.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Udeng</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp65.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Aksesoris</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                                        <div class="product-card">
+                        <div class="card-img-container">
+                            <img src="Image/batikkat28.png" alt="Motif Belumtau">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-row">
+                                <h4 class="product-name">Udeng</h4>
+                                <span class="product-rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                            <div class="card-price">Rp65.000,00</div>
+                            <div class="card-row align-bottom">
+                                <p class="product-desc">Aksesoris</p>
+                                <button class="cart-icon-btn"><i class="fas fa-shopping-cart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="katalog-counter">
+        <div class="counter-container">
+            <div class="counter-item">
+                <h3 class="counter-number" data-target="10">0</h3>
+                <p class="counter-label">Tahun Berkarya</p>
+            </div>
+            <div class="counter-item">
+                <h3 class="counter-number" data-target="100">0</h3>
+                <p class="counter-label">Pelanggan Loyal</p>
+            </div>
+            <div class="counter-item">
+                <h3 class="counter-number" data-target="20">0</h3>
+                <p class="counter-label">Motif Pilihan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="join-member-section">
+        <div class="join-member-container">
+            
+            <div class="join-left">
+                <div class="main-image-container">
+                    <img src="Image/batikmember.png" alt="Kain Batik Aralista" class="promo-img">
+                </div>
+                <div class="promo-icons-wrapper">
+                    <div class="promo-icon-box">
+                        <img src="Image/diskon.png" alt="Ikon Penawaran Eksklusif">
+                    </div>
+                    <div class="promo-icon-box">
+                        <img src="Image/penawaran.png" alt="Ikon Diskon Spesial">
+                    </div>
+                </div>
+            </div>
+
+            <div class="join-right">
+                <h2 class="join-title">Jadilah Bagian<br>dari Aralista</h2>
+                <p class="join-desc">Nikmati akses lebih awal ke koleksi terbaru, penawaran eksklusif, dan diskon spesial khusus untuk member kami.</p>
+                
+                <form action="#" class="join-form">
+                    <input type="email" placeholder="Masukkan Email Anda" required class="email-input">
+                    <button type="submit" class="btn-bergabung">Bergabung</button>
+                </form>
+
+                <div class="privacy-notice-box">
+                    <div class="privacy-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="privacy-text">
+                        <h4>Privasi dan Keamanan Data</h4>
+                        <p>Email Anda hanya digunakan untuk informasi koleksi terbaru, penawaran eksklusif, dan promosi dari Aralista. Kami berkomitmen menjaga keamanan data pribadi Anda dan tidak akan membagikannya kepada pihak lain tanpa persetujuan.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="pre-footer-image">
+        <img src="Image/rumput.png" alt="Aralista Banner Bawah" class="bottom-banner-img">
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+
+    <!-- CONTAINER -->
+    <div class="footer-container">
+
+        <!-- ================= LEFT ================= -->
+
+        <div class="footer-left">
+
+            <!-- TITLE -->
+            <div class="footer-title">
+
+                <h2>
+                    Temukan keindahan budaya
+                </h2>
+
+                <span>
+                    dalam setiap helai batik Aralista!
+                </span>
+
+            </div>
+
+            <!-- MENU GROUP -->
+            <div class="footer-menu-group">
+
+                <!-- MENU 1 -->
+                <div class="footer-menu">
+
+                    <h3>
+                        Jelajahi
+                    </h3>
+
+                    <a href="index.html">
+                        Beranda
+                    </a>
+
+                    <a href="katalog.html">
+                        Katalog
+                    </a>
+
+                    <a href="edukasi.html">
+                        Edukasi
+                    </a>
+
+                    <a href="profil.html">
+                        Profil Usaha
+                    </a>
+
+                    <a href="kontak.html">
+                        Kontak
+                    </a>
+
+                </div>
+
+                <!-- MENU 2 -->
+                <div class="footer-menu2">
+
+                    <h3>
+                        Layanan Pelanggan
+                    </h3>
+
+                    <a href="#">
+                        Pengembalian dan Penukaran
+                    </a>
+
+                    <a href="#">
+                        Pelacakan Pesanan
+                    </a>
+
+                    <a href="#">
+                        Panduan Ukuran
+                    </a>
+
+                    <a href="#">
+                        Instruksi Perawatan Produk
+                    </a>
+
+                </div>
+
+                <!-- MENU 3 -->
+                <div class="footer-menu3">
+
+                    <h3>
+                        Alamat
+                    </h3>
+
+                    <p>
+                        Jl. Sumber Maron,
+                        Karangsuko, Pagelaran,
+                        Malang, Jawa Timur,
+                        Indonesia
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= RIGHT ================= -->
+
+        <div class="footer-right">
+
+            <!-- TITLE -->
+            <h3 class="footer-contact-title">
+                Hubungi Kami
+            </h3>
+
+            <!-- FORM -->
+            <form class="footer-form">
+
+                <!-- EMAIL -->
+                <div class="input-email">
+
+                    <input
+                        type="email"
+                        placeholder="Masukkan Email"
+                        required>
+
+                    <button type="submit">
+                        Kirim
+                    </button>
+
+                </div>
+
+                <!-- TEXTAREA -->
+                <textarea placeholder="Ceritakan kesan & pesan untuk Aralista!"></textarea>
+
+            </form>
+
+            <!-- SOCIAL -->
+            <div class="footer-social">
+
+                <h3>
+                    Ikuti Kami
+                </h3>
+
+                <div class="social-links">
+
+                    <!-- INSTAGRAM -->
+                    <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                        <span>aralista_batik</span>
+                    </a>
+
+                    <!-- PHONE -->
+                    <a href="tel:+6285755022686" class="phone-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 857-5502-2686</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= LINE ================= -->
+
+    <div class="footer-line"></div>
+
+    <!-- ================= BOTTOM ================= -->
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Aralista.
+            Hak Cipta Dilindungi Undang-Undang.
+        </p>
+
+        <div class="footer-bottom-links">
+
+            <a href="#">
+                Privasi
+            </a>
+
+            <a href="#">
+                Syarat dan Ketentuan
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+        const hamburgerBtn =
+            document.getElementById('hamburger-btn');
+
+        const navMenu =
+            document.getElementById('nav-menu');
+
+        hamburgerBtn.addEventListener('click', () => {
+
+            navMenu.classList.toggle('show');
+
+        });
+
+    </script>
+
+    <script src="JS/counter.js"></script>
+
+    </body>
+</html>
